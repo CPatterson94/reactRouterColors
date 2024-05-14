@@ -1,19 +1,17 @@
-import { Routes, Route, Link } from "react-router-dom";
-import { Gray } from "./components/gray";
-import { Blue } from "./components/blue";
-import { Red } from "./components/red";
+import { Routes, Route } from "react-router-dom";
+import Gray from "./components/gray";
+import Blue from "./components/blue";
+import Red from "./components/red";
 import "./index.css";
+import NavBar from "./components/nav";
+import Footer from "./components/footer";
 
 function App() {
   return (
     <>
       <div id="container">
-        <h1>Hello React Router!</h1>
-        <div id="navbar">
-          <Link to="/" />
-          <Link to="/Blue" />
-          <Link to="/Red" />
-        </div>
+        <h1>Hello, This is React Router!</h1>
+        <NavBar />
         <div id="main-section">
           <Routes>
             <Route path={"/"} element={<Gray />} />
@@ -21,6 +19,7 @@ function App() {
             <Route path={"/red"} element={<Red />} />
           </Routes>
         </div>
+        <Footer />
       </div>
     </>
   );

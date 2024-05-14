@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-function NavBar() {
+function Footer() {
   return (
     <>
-      <div id="navbar">
+      <div id="Footer">
         <Link to="/">Home/Gray</Link>
         <Link to="/Blue">Blue</Link>
         <Link to="/Red">Red</Link>
@@ -10,4 +10,4 @@ function NavBar() {
     </>
   );
 }
-export default NavBar;
+export default Footer;
